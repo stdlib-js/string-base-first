@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@deno/mod.js';
+import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@v0.0.0-deno/mod.js';
 ```
 
 #### first( str, n )
@@ -63,7 +63,7 @@ out = first( 'foo bar', 10 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@deno/mod.js';
+import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@v0.0.0-deno/mod.js';
 
 var str = first( 'presidential election', 1 );
 // returns 'p'
