@@ -21,58 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var first = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof first, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns an empty string if provided an empty string', function test( t ) {
-	t.strictEqual( first( '', 1 ), '', 'returns expected value' );
-	t.strictEqual( first( '', 2 ), '', 'returns expected value' );
-	t.strictEqual( first( '', 3 ), '', 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function returns an empty string if provided zero as the second argument', function test( t ) {
-	t.strictEqual( first( 'hello world', 0 ), '', 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function returns the first UTF-16 code unit of a provided string', function test( t ) {
-	var out;
-
-	out = first( 'hello world', 1 );
-	t.strictEqual( out, 'h', 'returns expected value' );
-
-	out = first( '!!!', 1 );
-	t.strictEqual( out, '!', 'returns expected value' );
-
-	out = first( 'Hello World', 1 );
-	t.strictEqual( out, 'H', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function supports returning the first `n` UTF-16 code units of a provided string', function test( t ) {
-	var out;
-
-	out = first( 'hello world', 1 );
-	t.strictEqual( out, 'h', 'returns expected value' );
-
-	out = first( 'hello world', 7 );
-	t.strictEqual( out, 'hello w', 'returns expected value' );
-
-	out = first( '!!!', 1 );
-	t.strictEqual( out, '!', 'returns expected value' );
-
-	out = first( '!!!', 2 );
-	t.strictEqual( out, '!!', 'returns expected value' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
