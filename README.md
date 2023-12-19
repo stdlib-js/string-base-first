@@ -35,30 +35,38 @@ limitations under the License.
 
 > Return the first `n` UTF-16 code units of a string.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/string-base-first
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var first = require( '@stdlib/string-base-first' );
+first = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var first = require( 'path/to/vendor/umd/string-base-first/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.first;
+})();
+</script>
 ```
 
 #### first( str, n )
@@ -89,8 +97,13 @@ out = first( 'foo bar', 10 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var first = require( '@stdlib/string-base-first' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var str = first( 'presidential election', 1 );
 // returns 'p'
@@ -100,6 +113,11 @@ str = first( 'JavaScript', 1 );
 
 str = first( 'The Last of the Mohicans', 5 );
 // returns 'The L'
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -193,11 +211,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/string/base/first-code-point]: https://github.com/stdlib-js/string-base-first-code-point
+[@stdlib/string/base/first-code-point]: https://github.com/stdlib-js/string-base-first-code-point/tree/umd
 
-[@stdlib/string/base/first-grapheme-cluster]: https://github.com/stdlib-js/string-base-first-grapheme-cluster
+[@stdlib/string/base/first-grapheme-cluster]: https://github.com/stdlib-js/string-base-first-grapheme-cluster/tree/umd
 
-[@stdlib/string/first]: https://github.com/stdlib-js/string-first
+[@stdlib/string/first]: https://github.com/stdlib-js/string-first/tree/umd
 
 <!-- </related-links> -->
 
