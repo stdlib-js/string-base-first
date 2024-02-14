@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@esm/index.mjs';
+import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@v0.2.0-esm/index.mjs';
 ```
 
 #### first( str, n )
@@ -79,7 +79,7 @@ out = first( 'foo bar', 10 );
 <body>
 <script type="module">
 
-import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@esm/index.mjs';
+import first from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-first@v0.2.0-esm/index.mjs';
 
 var str = first( 'presidential election', 1 );
 // returns 'p'
