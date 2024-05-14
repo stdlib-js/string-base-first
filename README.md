@@ -118,6 +118,8 @@ str = first( 'The Last of the Mohicans', 5 );
 
 -   <span class="package-name">[`@stdlib/string-base/first-code-point`][@stdlib/string/base/first-code-point]</span><span class="delimiter">: </span><span class="description">return the first Unicode code point of a string.</span>
 -   <span class="package-name">[`@stdlib/string-base/first-grapheme-cluster`][@stdlib/string/base/first-grapheme-cluster]</span><span class="delimiter">: </span><span class="description">return the first grapheme cluster (i.e., user-perceived character) of a string.</span>
+-   <span class="package-name">[`@stdlib/string-base/last`][@stdlib/string/base/last]</span><span class="delimiter">: </span><span class="description">return the last UTF-16 code unit of a string.</span>
+-   <span class="package-name">[`@stdlib/string-base/remove-first`][@stdlib/string/base/remove-first]</span><span class="delimiter">: </span><span class="description">remove the first UTF-16 code unit of a string.</span>
 -   <span class="package-name">[`@stdlib/string-first`][@stdlib/string/first]</span><span class="delimiter">: </span><span class="description">return the first character(s) of a string.</span>
 
 </section>
@@ -201,6 +203,10 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/base/first-code-point]: https://github.com/stdlib-js/string-base-first-code-point
 
 [@stdlib/string/base/first-grapheme-cluster]: https://github.com/stdlib-js/string-base-first-grapheme-cluster
+
+[@stdlib/string/base/last]: https://github.com/stdlib-js/string-base-last
+
+[@stdlib/string/base/remove-first]: https://github.com/stdlib-js/string-base-remove-first
 
 [@stdlib/string/first]: https://github.com/stdlib-js/string-first
 
